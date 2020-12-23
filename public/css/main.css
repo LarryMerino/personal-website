@@ -1,0 +1,91 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: 'Orbitron', sans-serif;
+}
+
+img {
+  width: 100%;
+}
+
+.gridContainer {
+  display: -ms-grid;
+  display: grid;
+}
+
+.main {
+  padding: 7%;
+}
+
+.title h1 {
+  font-size: 2.5rem;
+}
+
+.title p {
+  font-size: 1.25rem;
+  color: #b3b3b3;
+}
+
+.content {
+  color: #b3b3b3;
+}
+
+.content p {
+  font-size: 1rem;
+  margin: 1rem 0rem;
+}
+
+.content p spam {
+  -webkit-animation: blink 0.6s infinite;
+          animation: blink 0.6s infinite;
+}
+
+.content ul {
+  list-style-type: none;
+}
+
+.footer {
+  padding: 7%;
+}
+
+.footer ul {
+  list-style-type: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.footer li {
+  font-size: 50px;
+  text-align: center;
+}
+
+.footer li a {
+  color: black;
+}
+
+@-webkit-keyframes blink {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 100;
+  }
+}
+
+@keyframes blink {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 100;
+  }
+}
+/*# sourceMappingURL=main.css.map */
