@@ -8,16 +8,22 @@ body {
   font-family: "Orbitron", sans-serif;
 }
 
-img {
+#mainProfilePhoto {
   width: 100%;
 }
 
 .gridContainer {
   display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.header {
+  grid-column: 1/3;
 }
 
 .main {
   padding: 7%;
+  grid-column: 1/3;
 }
 
 .title {
@@ -30,7 +36,7 @@ img {
   }
 }
 
-.content {
+.mainTextContent {
   color: #b3b3b3;
   p {
     font-size: 1rem;
@@ -46,6 +52,7 @@ img {
 
 .footer {
   padding: 7%;
+  grid-column: 1/3;
   li {
     font-size: 50px;
     text-align: center;
@@ -76,4 +83,36 @@ img {
   100% {
     opacity: 100;
   }
+}
+
+@media (min-width: 1366px) {
+
+  .header {
+    grid-column: 1/2;
+    grid-row: 1/3;
+  }
+
+  .main {
+    grid-column: 2/3;
+    grid-row: 1/2;
+  }
+
+  .footer {
+    grid-column: 2/3;
+    grid-row: 2/3;
+  }
+  
+  #mainProfilePhoto {
+    height: 100%;
+    object-fit: fill;
+  }
+
+  .mainTextContent {
+    ul{
+      display: grid;
+      grid-template-columns: repeat(2,1fr);
+      
+    }
+  }
+
 }
